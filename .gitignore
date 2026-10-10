@@ -1,0 +1,5 @@
+myvenv/
+__pycache__/
+*.pyc
+chroma_db/
+chroma_db_pipeline/
