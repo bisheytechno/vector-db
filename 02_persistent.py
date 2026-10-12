@@ -5,7 +5,6 @@ embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
     model_name="all-MiniLM-L6-v2"
 )
 
-# Data save garne — restart bhaye pani rakhincha!
 client = chromadb.PersistentClient(path="./chroma_db")
 
 collection = client.get_or_create_collection(
@@ -18,6 +17,7 @@ collection.add(
         "Python is a programming language",
         "Machine learning uses data",
         "Nepal is in Asia"
+        "Javascript is a programming language"
     ],
     metadatas=[
         {"source": "tech"},
